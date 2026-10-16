@@ -1,0 +1,26 @@
+{
+  "dataset_sha256": "b661c3b039fa309e2e352fdcf7d649c240e4069dc5aba81651ef703f9b43ac58",
+  "products": 10,
+  "unique_brands": 8,
+  "unique_notes": 81,
+  "source": "FragDB sample (MIT) with manually checked note-pyramid factual metadata",
+  "method": "fitted TF-IDF content-based cosine retrieval",
+  "evaluation": {
+    "status": "computed",
+    "train_count": 7,
+    "test_count": 3,
+    "evaluable_test_count": 3,
+    "heldout_note_hits": 4,
+    "heldout_note_total": 11,
+    "hidden_note_coverage_at_3": 0.3636,
+    "random_reference_coverage_at_3": 0.5455,
+    "random_reference_hits": 6,
+    "meaning": "Limited cross-fragrance masked-note reconstruction proxy; NOT preference/recommendation accuracy."
+  },
+  "caveats": [
+    "No real user preference labels",
+    "No product ratings/prices/images",
+    "Training and retrieval share the catalogue index",
+    "A similarity score is not probability of liking a scent"
+  ]
+}

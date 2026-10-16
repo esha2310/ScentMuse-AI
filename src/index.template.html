@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#fcf7f1">
+  <meta name="description" content="ScentMuse AI — a luxury-cute fragrance discovery experience, with sourced perfume notes and transparent machine-learning scent matching.">
+  <meta property="og:title" content="ScentMuse AI | Find your fragrance muse">
+  <meta property="og:description" content="A pretty place to explore genuine perfume notes with explainable AI matching.">
+  <title>ScentMuse AI | The Fragrance Atelier</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-note"><span>✦</span> A LITTLE LUXURY, A LITTLE MAGIC <span>✦</span><span class="top-desktop"> &nbsp; | &nbsp; DISCOVER YOUR SCENT STORY</span></div>
+  <header id="main-header" class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="#home" aria-label="ScentMuse AI home"><span class="logo-flower">✿</span><span class="logo-name">scentmuse<span class="logo-dot">.</span><span class="logo-ai">AI</span><small>THE FRAGRANCE ATELIER</small></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a class="nav-active" href="#home">Home</a><a href="#collection">The collection</a><a href="#finder">AI scent finder</a><a href="#story">Our story</a>
+      </nav>
+      <div class="header-actions">
+        <button id="open-search" class="icon-btn search-toggle" type="button" aria-label="Go to product search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+        <button id="open-wishlist" class="icon-btn with-count" type="button" aria-label="Open wishlist"><svg viewBox="0 0 24 24"><path d="M20.4 5.5a5.3 5.3 0 0 0-7.5 0L12 6.4l-.9-.9a5.3 5.3 0 0 0-7.5 7.5L12 21.2l8.4-8.2a5.3 5.3 0 0 0 0-7.5Z"/></svg><span id="wish-count" class="count-badge" hidden>0</span></button>
+        <button id="open-bag" class="icon-btn with-count" type="button" aria-label="Open saved scent tray"><svg viewBox="0 0 24 24"><path d="M4 8h16l-1 12H5L4 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span id="bag-count" class="count-badge" hidden>0</span></button>
+        <button id="menu-toggle" class="icon-btn mobile-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#home">Home</a><a href="#collection">The collection</a><a href="#finder">AI scent finder</a><a href="#story">Our story</a></nav>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-rule"></span> WELCOME TO THE FRAGRANCE ATELIER</div>
+          <h1>Every scent<br>tells a <em>beautiful</em><br><span class="story-line">little story<span class="tiny-flower">✿</span></span></h1>
+          <p class="hero-description">Find your signature fragrance with a little intuition, a touch of romance, and real scent-note matching powered by machine learning.</p>
+          <div class="hero-ctas"><a class="btn btn-dark" href="#finder">Find my scent <span aria-hidden="true">↗</span></a><a class="btn btn-link" href="#collection">Explore collection <span>→</span></a></div>
+          <div class="hero-signature"><span class="signature-stars">✳ ✳ ✳</span><span>Made for the curious, the dreamy & the scent-obsessed.</span></div>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Original illustrated pastel perfume bottle surrounded by flowers, pearls and decorative elements">
+          <div class="hero-visual-background"></div><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div>
+          <span class="visual-script">your scent,<br>your story.</span>
+          <div class="hero-perfume" id="hero-perfume"></div>
+          <div class="petal petal-1">✿</div><div class="petal petal-2">✳</div><div class="petal petal-3">✿</div><div class="petal petal-4">✦</div>
+          <div class="float-note"><span>♡</span> your new obsession awaits</div><span class="curvy-arrow">↝</span>
+          <div class="hero-bottom-stamp">PETALS, POETRY & <b>PERFUME</b></div>
+        </div>
+      </div>
+    </section>
+    <section class="promise-strip" aria-label="Our promises"><div class="container promise-grid"><div><span>✿</span><p><strong>Real fragrances</strong><small>Verified, source-linked profiles</small></p></div><div><span>✧</span><p><strong>A little science</strong><small>Genuine TF-IDF scent similarity</small></p></div><div><span>♡</span><p><strong>Totally your vibe</strong><small>Personal notes, transparent matches</small></p></div></div></section>
+    <section class="section family-section container" id="families">
+      <div class="section-heading centered"><p class="eyebrow eyebrow-center">✦ EXPLORE YOUR SCENT MOOD ✦</p><h2>What's your <em>fragrance personality?</em></h2><p>From soft petals to golden afternoons, there's a fragrance family for every version of you.</p></div>
+      <div class="family-grid" id="families-grid">
+        <button class="family-card" data-family="Floral" type="button"><span class="family-disc floral"><span>✿</span></span><strong>Floral</strong><small>Soft & romantic ↗</small></button>
+        <button class="family-card" data-family="Fresh" type="button"><span class="family-disc fresh"><span>❋</span></span><strong>Fresh</strong><small>Bright & breezy ↗</small></button>
+        <button class="family-card" data-family="Gourmand" type="button"><span class="family-disc gourmand"><span>♡</span></span><strong>Gourmand</strong><small>Sweet & cozy ↗</small></button>
+        <button class="family-card" data-family="Amber" type="button"><span class="family-disc amber"><span>✧</span></span><strong>Amber</strong><small>Warm & alluring ↗</small></button>
+        <button class="family-card" data-family="All" type="button"><span class="family-disc all"><span>✼</span></span><strong>All scents</strong><small>Every little muse ↗</small></button>
+      </div>
+    </section>
+    <section id="collection" class="section collection-section">
+      <div class="container">
+        <div class="collection-heading"><div><p class="eyebrow">THE SCENT LIBRARY  ✦  CURATED WITH CARE</p><h2>Perfumes to <em>fall for.</em></h2><p>Explore our small but genuine fragrance library. Discover beautiful note pyramids, not made-up product ratings.</p></div><div class="hand-note">pretty things,<br>real data. ♡</div></div>
+        <div class="tool-row"><label class="search-field"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="shop-search" type="search" placeholder="Search perfumes, brands or notes..." aria-label="Search perfumes, brands or notes"></label><label class="sort-field"><span>Sort</span><select id="sort-select" aria-label="Sort fragrance list"><option value="featured">Featured</option><option value="name">A–Z</option><option value="brand">Brand</option><option value="year">Newest</option></select></label></div>
+        <div id="filter-buttons" class="filter-buttons" aria-label="Filter by fragrance family"><button type="button" data-filter="All" class="selected">All fragrances</button><button type="button" data-filter="Floral">Floral</button><button type="button" data-filter="Fresh">Fresh</button><button type="button" data-filter="Gourmand">Gourmand</button><button type="button" data-filter="Amber">Amber</button></div>
+        <div class="collection-meta"><span id="product-count" aria-live="polite">Loading real fragrances...</span><span>✦ Original bottle illustrations · Not official product photography</span></div>
+        <div class="product-grid" id="product-grid" aria-live="polite"></div>
+      </div>
+    </section>
+    <section class="interlude container" aria-label="Fragrance inspiration"><div class="interlude-art"><span class="interlude-flower">✿</span><div id="mini-perfume"></div><span class="interlude-squiggle">✧ ✧ ✧</span></div><div class="interlude-copy"><p class="eyebrow">A LITTLE BIT OF MAGIC</p><h2>Smell good.<br><em>Feel everything.</em></h2><p>Notes are little memories waiting to happen. A citrus morning, a vanilla afternoon, the warmth of something wonderful.</p><a class="btn btn-outline-dark" href="#finder">Discover your notes <span>→</span></a></div></section>
+    <section id="finder" class="section finder-section"><div class="container"><div class="section-heading centered"><p class="eyebrow eyebrow-center">✳ A LITTLE SCIENCE, A LOT OF SCENT ✳</p><h2>Meet your <em>scent soulmate.</em></h2><p>Pick the scent notes that make you smile. Our fitted machine-learning model finds perfumes sharing those notes.</p></div>
+      <div class="finder-layout"><div class="finder-panel"><div class="quiz-label"><span class="round-icon">✧</span><div><strong>Your personal scent notes</strong><small>Step 01 · Tell us what you love</small></div></div><div class="divider-line"></div><p class="field-title">1. Pick your favourite notes <span>(choose one or more)</span></p><div id="note-chips" class="note-chips"></div><label class="search-field note-search"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="note-search" type="search" placeholder="Search all available scent notes..." aria-label="Find a fragrance note"></label><div id="extra-notes" class="extra-notes"></div><div class="divider-line"></div><p class="field-title">2. Optional fragrance family</p><div id="finder-families" class="finder-families"><button class="active" type="button" data-qfamily="All">Surprise me ✨</button><button type="button" data-qfamily="Floral">Floral</button><button type="button" data-qfamily="Fresh">Fresh</button><button type="button" data-qfamily="Gourmand">Gourmand</button><button type="button" data-qfamily="Amber">Amber</button></div><button type="button" class="btn btn-dark find-button" id="recommend-btn">Find my fragrance matches <span>↗</span></button><p class="quiz-footnote">✧ Model: fitted TF-IDF + cosine similarity. Scores measure note similarity, not the chance you'll love a perfume.</p></div>
+      <div class="finder-art"><div class="finder-art-inset"><span class="soft-flower one">✿</span><span class="soft-flower two">✼</span><div id="finder-perfume"></div><div class="finder-art-tag">Your muse is<br>just a note away ♡</div></div><div class="finder-art-caption">an invitation to find your signature scent <span>✦</span></div></div></div>
+      <div id="results" class="result-section" aria-live="polite" tabindex="-1"></div>
+    </div></section>
+    <section id="story" class="section story-section container"><div class="story-orbit"><span>✿</span><i>MADE WITH LOVE & A LITTLE LOGIC</i></div><div class="story-main"><p class="eyebrow">BEHIND THE BOUQUET</p><h2>A pretty little idea,<br><em>backed by real data.</em></h2><p>ScentMuse AI is a student portfolio project for discovering perfumes through fragrance notes. It pairs an expressive, luxury-cute interface with a reproducible, content-based model fitted on sourced fragrance profiles.</p><p>We show the exact notes behind every suggestion. No invented reviews, no imaginary prices, no pretend human preference accuracy.</p><a href="https://github.com/FragDB/fragrance-database" target="_blank" rel="noopener noreferrer" class="under-link">Explore the sample data source ↗</a></div></section>
+    <section class="bottom-cta"><span>✿</span><h2>Your next favourite scent<br>might be one little note away.</h2><a class="btn btn-light" href="#finder">Let's find it <span>↗</span></a></section>
+  </main>
+  <footer><div class="container footer-top"><div><div class="footer-logo">✿ scentmuse<span>.</span><sup>AI</sup></div><p>A pretty place for discovering the notes you love.</p></div><div class="footer-links"><a href="#home">Home</a><a href="#collection">Collection</a><a href="#finder">Scent finder</a><a href="#story">About the model</a></div></div><div class="container footer-bottom"><small>© 2026 ScentMuse AI · Educational portfolio demo · Not affiliated with perfume brands.</small><small>Data: credited sources · Original illustrative bottle artwork · No payments collected</small></div></footer>
+  <div id="overlay" class="overlay" hidden></div>
+  <aside id="drawer" class="drawer" role="dialog" aria-modal="true" aria-label="Saved fragrances" hidden><div class="drawer-top"><div><p class="eyebrow">YOUR LITTLE COLLECTION</p><h2 id="drawer-title">My favourites ♡</h2></div><button type="button" id="drawer-close" class="circle-close" aria-label="Close panel">×</button></div><div id="drawer-list" class="drawer-list"></div><p class="drawer-note">Saved in your browser only. This is a discovery demo; no checkout, prices or orders.</p></aside>
+  <section id="product-modal" class="product-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading" hidden><button class="circle-close modal-close" type="button" id="modal-close" aria-label="Close perfume details">×</button><div id="modal-content"></div></section>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="app.js"></script>
+</body></html>
